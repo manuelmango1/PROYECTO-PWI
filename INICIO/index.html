@@ -13,9 +13,9 @@
             <div class="logo"><img id="logo-nav" src="./IMAGENES MP/logomadisonsinfondo.png" alt="Logo Madison"></div>
             <ul class="nav-links">
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="">Productos</a></li>
+                <li><a href="#productos">Productos</a></li>
                 <li><a href="">Normas</a></li>
-                <li><a href="">Contacto</a></li>
+                <li><a href="#footer">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -28,24 +28,21 @@
 
             El Equipo Madison Paddle
         </p>
-        <div class="center-container">
+
         <div class="carousel">
-            <button class="carousel-button prev-button">Anterior</button>
-            <div class="slide-container">
-                <div class="slide">
-                    <img class="img-car" src="./IMAGENES MP/WhatsApp Image 2023-08-12 at 20.37.35.jpeg" alt="Image 1">
-                </div>
-                <div class="slide">
-                    <img class="img-car" src="./IMAGENES MP/WhatsApp Image 2023-08-12 at 20.37.35 (1).jpeg" alt="Image 2">
-                </div>
-                <div class="slide">
-                    <img class="img-car" src="./IMAGENES MP/WhatsApp Image 2023-08-12 at 20.37.34 (2).jpeg" alt="Image 3">
-                </div>
+            <button id="prevBtn" class="carousel-btn">Anterior</button>
+            <div class="carousel-images">
+                <img src="./IMAGENES MP/WhatsApp Image 2023-08-15 at 16.13.08.jpeg" alt="Imagen 1" class="carousel-image">
+                <img src="./IMAGENES MP/WhatsApp Image 2023-08-15 at 16.13.21.jpeg" alt="Imagen 2" class="carousel-image">
+                <img src="./IMAGENES MP/WhatsApp Image 2023-08-15 at 16.13.32.jpeg" alt="Imagen 3" class="carousel-image">
+                <img src="./IMAGENES MP/WhatsApp Image 2023-08-15 at 16.13.21.jpeg" alt="Imagen 3" class="carousel-image">
+                <img src="./IMAGENES MP/WhatsApp Image 2023-08-15 at 16.13.21.jpeg" alt="Imagen 3" class="carousel-image">
+                <img src="./IMAGENES MP/WhatsApp Image 2023-08-15 at 16.13.08.jpeg" alt="Imagen 3" class="carousel-image">
             </div>
-            <button class="carousel-button next-button">Siguiente</button>
+            <button id="nextBtn" class="carousel-btn">Siguiente</button>
         </div>
-    </div>
-    <p class="presentation about prod">
+        
+    <p id="productos" class="presentation about">
        productos
     </p>
         <section class="products">
@@ -98,14 +95,24 @@
             
             
         </section>
+        <section class="normas-section">
+            <h1>Normas</h1>
+            <p class="texto-centrado">Bienvenido a nuestras normas. A continuación, encontrarás una lista de reglas que debes seguir:</p>
+            <ul class="normas-lista">
+                <li>Norma 1:...</li>
+                <li>Norma 2:...</li>
+                <li>Norma 3:...</li>
+                <!-- Agrega más normas aquí -->
+            </ul>
+        </section>
 
         <section class="about">
             <h2>Sobre Nosotros</h2>
-            <p>En Madison Paddle, creemos en la importancia de apoyar a los artesanos y su trabajo...</p>
+            <p>En Madison Paddle, creemos en la importancia de apoyar a los jugadores y su crecimiento...</p>
         </section>
     </main>
 
-    <footer>
+    <footer id="footer">
         <div class="footer-logo">Madison Paddle</div>
         <div class="social-links">
             <a href="#"><i class="fa-brands fa-facebook"></i></a>

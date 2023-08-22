@@ -1,30 +1,20 @@
-const prevButton = document.querySelector('.prev-button');
-const nextButton = document.querySelector('.next-button');
-const slides = document.querySelectorAll('.slide');
+const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
+const carouselImages = document.querySelector(".carousel-images");
 
-let currentSlide = 0;
+let currentIndex = 0;
 
-function showSlide(slideIndex) {
-    slides.forEach((slide, index) => {
-        if (index === slideIndex) {
-            slide.style.display = 'flex';
-        } else {
-            slide.style.display = 'none';
-        }
-    });
+function showImage(index) {
+    carouselImages.style.transform = `translateX(-${index * 100}%)`;
 }
 
-function showNextSlide() {
-    currentSlide = (currentSlide + 1) % slides.length;
-    showSlide(currentSlide);
-}
+prevBtn.addEventListener("click", () => {
+    currentIndex = (currentIndex - 1 + carouselImages.children.length) % carouselImages.children.length;
+    showImage(currentIndex);
+});
+nextBtn.addEventListener("click", () => {
+    currentIndex = (currentIndex + 1) % carouselImages.children.length;
+    showImage(currentIndex);
+});
 
-function showPrevSlide() {
-    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-    showSlide(currentSlide);
-}
-
-nextButton.addEventListener('click', showNextSlide);
-prevButton.addEventListener('click', showPrevSlide);
-
-showSlide(currentSlide);
+showImage(currentIndex);
