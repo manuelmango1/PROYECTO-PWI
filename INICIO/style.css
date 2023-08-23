@@ -280,3 +280,9 @@ footer {
         font-size: 10px;
     }
 }
+@media (max-width:272px) {
+    *{
+        font-size: smaller;
+        width: fit-content;
+    }
+}
