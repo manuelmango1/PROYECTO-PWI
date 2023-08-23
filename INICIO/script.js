@@ -19,3 +19,4 @@ nextBtn.addEventListener("click", () => {
 
 showImage(currentIndex);
 
+
